@@ -96,6 +96,7 @@ namespace kata
                 totalValue += threeSixes;
 
             }
+
             Console.WriteLine(totalValue);
             return totalValue;
         }
