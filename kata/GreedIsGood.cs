@@ -10,8 +10,7 @@ namespace kata
     {
         public int Submission(int[] dice)
         {
-            //dice = new string[5] { "5", "1", "3", "4", "1" };
-
+     
             int threeOnes = 1000;
             int threeTwos = 200;
             int threeThrees = 300;
@@ -41,15 +40,12 @@ namespace kata
                     fiveCount++;
                 if (Convert.ToInt32(dice[x]) == 6)
                     sixCount++;
-
-
             }
 
             if (oneCount >= 3)
             {
                 totalValue += threeOnes;
                 oneCount -= 3;
-
             }
 
             if (oneCount != 0)
@@ -61,32 +57,26 @@ namespace kata
                         totalValue += one;
                     }
                 }
-
             }
 
             if (twoCount >= 3)
             {
                 totalValue += threeTwos;
-
             }
 
             if (threeCount >= 3)
             {
                 totalValue += threeThrees;
-
             }
             if (fourCount >= 3)
             {
                 totalValue += threeFours;
-
             }
 
             if (fiveCount >= 3)
             {
                 totalValue += threeFives;
                 fiveCount -= 3;
-
-
             }
 
             if (fiveCount != 0)
@@ -99,7 +89,6 @@ namespace kata
                         fiveCount--;
                     }
                 }
-
             }
 
             if (sixCount >= 3)
