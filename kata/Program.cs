@@ -10,7 +10,7 @@ namespace kata
     {
         static int Main(string[] dice)
         {
-            dice = new string[5] { "1", "2", "1", "4", "5" };
+            dice = new string[5] { "5", "1", "3", "4", "1" };
 
             int threeOnes = 1000;
             int threeTwos = 200;
@@ -25,19 +25,12 @@ namespace kata
 
             int oneCount = 0; int twoCount = 0; int threeCount = 0; int fourCount = 0; int fiveCount = 0; int sixCount = 0;
 
-            var counts = new ValueCounts[];
-            {
-                {1,0},
-                {2,0},
-                {3,0},
-                {4,0},
-                {5,0},
-            };
+
 
             for (var x = 0; x < 5; x++)
             {
                 if (Convert.ToInt32(dice[x]) == 1)
-                    counts.
+                    oneCount++;
                 if (Convert.ToInt32(dice[x]) == 2)
                     twoCount++;
                 if (Convert.ToInt32(dice[x]) == 3)
@@ -51,10 +44,70 @@ namespace kata
 
 
             }
-           for(var x =1; x <= 5; x++)
-            {
-                if(one)
-            }
+           
+                if (oneCount >= 3)
+                {
+                    totalValue += threeOnes;
+                    oneCount -= 3;
+           
+                }
+
+                if (oneCount != 0)
+                {
+                    if (oneCount > 0)
+                    {
+                        for (var y = oneCount; y > 0; y--)
+                        {
+                            totalValue += one;
+                        }
+                    }
+             
+                }
+
+                if (twoCount >= 3)
+                {
+                    totalValue += threeTwos;
+             
+                }
+
+                if (threeCount >= 3)
+                {
+                    totalValue += threeThrees;
+         
+                }
+                if (fourCount >= 3)
+                {
+                    totalValue += threeFours;
+            
+                }
+
+                if (fiveCount >= 3)
+                {
+                    totalValue += threeFives;
+                    fiveCount -= 3;
+           
+
+                }
+
+                if (fiveCount != 0)
+                {
+                    if (fiveCount > 0)
+                    {
+                        for (var y = fiveCount; y > 0; y--)
+                        {
+                            totalValue += five;
+                            fiveCount--;
+                        }
+                    }
+      
+                }
+
+                if (sixCount >= 3)
+                {
+                    totalValue += threeSixes;
+                  
+                }
+            Console.WriteLine(totalValue);
             return 0;
         }
     }
