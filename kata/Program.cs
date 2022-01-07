@@ -8,9 +8,10 @@ namespace kata
         {
             //Finding next perfect square
             FindNextPerfectSquare nextSquare = new FindNextPerfectSquare();
-            nextSquare.findNextSquare(121);
-            nextSquare.findNextSquare(625);
-            nextSquare.findNextSquare(114);
+            //nextSquare.findNextSquare(121);
+            //nextSquare.findNextSquare(625);
+            //nextSquare.findNextSquare(114);
+            nextSquare.findNextSquare(155);
 
             //Factorial
             Factorial factorial = new Factorial();

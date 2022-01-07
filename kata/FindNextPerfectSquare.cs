@@ -8,25 +8,13 @@ namespace kata
 {
     internal class FindNextPerfectSquare
     {
-        //You might know some pretty large perfect squares.But what about the NEXT one?
-
-        //Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer.
-
-        //If the parameter is itself not a perfect square then -1 should be returned.You may assume the parameter is non-negative.
-
-        //Examples:(Input --> Output)
-
-        //121 --> 144
-        //625 --> 676
-        //114 --> -1 since 114 is not a perfect square
-
-        public double findNextSquare(double previousSquare)
+        public long findNextSquare(long num)
         {
-            double nextSquare = 0;
+            long nextSquare = 0;
 
             double previousSquaredInteger = 0;
             
-            previousSquaredInteger = Math.Sqrt(previousSquare);
+            previousSquaredInteger = Math.Sqrt(num);
 
             if ( previousSquaredInteger % 1 != 0)
             {
@@ -35,9 +23,9 @@ namespace kata
             }
             else
             {
-                previousSquaredInteger = Math.Pow(previousSquaredInteger + 1, 2);
-                Console.WriteLine(previousSquaredInteger);
-                return previousSquaredInteger;
+                nextSquare = (long) Math.Pow(previousSquaredInteger + 1, 2);
+                Console.WriteLine(nextSquare);
+                return nextSquare;
             }
         }
     }
