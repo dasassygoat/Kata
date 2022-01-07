@@ -19,5 +19,26 @@ namespace kata
         //121 --> 144
         //625 --> 676
         //114 --> -1 since 114 is not a perfect square
+
+        public double findNextSquare(double previousSquare)
+        {
+            double nextSquare = 0;
+
+            double previousSquaredInteger = 0;
+            
+            previousSquaredInteger = Math.Sqrt(previousSquare);
+
+            if ( previousSquaredInteger % 1 != 0)
+            {
+                Console.WriteLine(-1);
+                return -1;
+            }
+            else
+            {
+                previousSquaredInteger = Math.Pow(previousSquaredInteger + 1, 2);
+                Console.WriteLine(previousSquaredInteger);
+                return previousSquaredInteger;
+            }
+        }
     }
 }

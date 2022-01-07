@@ -6,6 +6,11 @@ namespace kata
     {
         static int Main(string[] dice)
         {
+            //Finding next perfect square
+            FindNextPerfectSquare nextSquare = new FindNextPerfectSquare();
+            nextSquare.findNextSquare(121);
+            nextSquare.findNextSquare(625);
+            nextSquare.findNextSquare(114);
 
             //Factorial
             Factorial factorial = new Factorial();
