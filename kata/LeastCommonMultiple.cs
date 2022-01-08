@@ -12,7 +12,18 @@ namespace kata
 
         public int Lcm(List<int> num)
         {
-            return 1;
+            if(num.Count == 1)
+            {
+                Console.WriteLine(num.First());
+                return num.First();
+            }
+
+            if (num.Count == 0)
+            {
+                Console.WriteLine(1);
+                return 1;
+            }
+            return 0;
         }
     }
 }
