@@ -23,6 +23,24 @@ namespace kata
                 Console.WriteLine(1);
                 return 1;
             }
+
+            int lcmValue = 0;
+
+             foreach(var val in num)
+            {
+                var startingValue =1;
+
+                while (true)
+                {
+                    var multiple = val * startingValue;
+                    int foundValue = 0;
+                    foundValue = num.Count(x => (x * startingValue++) == multiple);
+                    if(foundValue > 1)
+                    {
+                        Console.WriteLine("Found multiple");
+                    }
+                }
+            }
             return 0;
         }
     }
