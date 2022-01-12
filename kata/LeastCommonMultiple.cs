@@ -25,20 +25,22 @@ namespace kata
             }
 
             int lcmValue = 0;
-
-             foreach(var val in num)
+            for(int x =1;x < num.Count;x++) 
             {
                 var startingValue =1;
 
                 while (true)
                 {
-                    var multiple = val * startingValue;
+                    var multiple = num[x] * startingValue;
                     int foundValue = 0;
-                    foundValue = num.Count(x => (x * startingValue++) == multiple);
+                    foundValue = num.Count(x => (x * startingValue) == multiple);
                     if(foundValue > 1)
                     {
                         Console.WriteLine("Found multiple");
+                        break;
                     }
+
+                    startingValue = startingValue + 1;
                 }
             }
             return 0;
