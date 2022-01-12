@@ -25,7 +25,7 @@ namespace kata
             }
 
             int lcmValue = 0;
-            for(int x =1;x < num.Count;x++) 
+            for(int x =1;x <= num.Count;x++) 
             {
                 var startingValue =1;
 
