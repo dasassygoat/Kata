@@ -28,15 +28,15 @@ namespace kata
             for(int x =1;x <= num.Count;x++) 
             {
                 var startingValue =1;
-                num.First(findVal => findVal == num[x - 1]).;
+                
                 while (true)
                 {
-                    var multiple = num[x] * startingValue;
+                    var multiple = num[x-1];
                     int foundValue = 0;
-                    foundValue = num.Count(x => (x * startingValue) == multiple);
-                    if(foundValue > 1)
+                    foundValue = num.Count(v => (v * startingValue) == multiple);
+                    if(foundValue > 0)
                     {
-                        Console.WriteLine("Found multiple");
+                        Console.WriteLine($"Found multiple {multiple} and startingValue: {startingValue}");
                         break;
                     }
 
