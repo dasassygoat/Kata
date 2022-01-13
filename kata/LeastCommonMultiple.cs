@@ -28,7 +28,7 @@ namespace kata
             for(int x =1;x <= num.Count;x++) 
             {
                 var startingValue =1;
-
+                num.First(findVal => findVal == num[x - 1]).;
                 while (true)
                 {
                     var multiple = num[x] * startingValue;
