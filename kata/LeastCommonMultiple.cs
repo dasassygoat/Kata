@@ -25,23 +25,28 @@ namespace kata
             }
 
             int lcmValue = 0;
-            for(int x =1;x <= num.Count;x++) 
+            var startingValue = 1;
+            for (int x =1;x <= num.Count;x++) 
             {
-                var startingValue =1;
                 
-                while (true)
+                Console.WriteLine($"Staring Value: {startingValue}");
+                var multiple = num[x-1];
+                Console.WriteLine($"Multiple Value: {multiple}");
+                bool notFound = true;
+                while (notFound)
                 {
-                    var multiple = num[x-1];
+                    
                     int foundValue = 0;
                     foundValue = num.Count(v => (v * startingValue) == multiple);
-                    if(foundValue > 0)
+                    if(foundValue > 1)
                     {
                         Console.WriteLine($"Found multiple {multiple} and startingValue: {startingValue}");
-                        break;
+                        notFound = false;
                     }
 
-                    startingValue = startingValue + 1;
+                  startingValue = startingValue + 1;  
                 }
+                
             }
             return 0;
         }
