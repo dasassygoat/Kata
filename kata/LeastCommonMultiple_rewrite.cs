@@ -10,17 +10,25 @@ namespace kata
     {
         public int Lcm(List<int> num)
         {
+            if (num.Count == 0)
+            {
+                Console.WriteLine(1);
+                return 1;
+            }
+
             if (num.Count == 1)
             {
                 Console.WriteLine(num.First());
                 return num.First();
             }
 
-            if (num.Count == 0)
+            if(num.Count == 2)
             {
-                Console.WriteLine(1);
-                return 1;
-            }
+                var numListMultipled = num[0] * num[1];
+                Console.WriteLine(numListMultipled);
+                return numListMultipled;
+            }       
+
             return 0;
         }
     }
