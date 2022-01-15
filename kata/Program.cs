@@ -7,10 +7,16 @@ namespace kata
         static int Main(string[] dice)
         {
             //LCM
-            LeastCommonMultiple lcm = new LeastCommonMultiple();
+            LeastCommonMultiple_rewrite lcm = new LeastCommonMultiple_rewrite();
             lcm.Lcm(new List<int> { 2, 5 }); //expected to be 10
             lcm.Lcm(new List<int> { 2, 3, 4 }); //expected to be 12
             lcm.Lcm(new List<int> { 9 }); //shoud be 9
+
+            //LCM Original version
+            //LeastCommonMultiple lcm = new LeastCommonMultiple();
+            //lcm.Lcm(new List<int> { 2, 5 }); //expected to be 10
+            //lcm.Lcm(new List<int> { 2, 3, 4 }); //expected to be 12
+            //lcm.Lcm(new List<int> { 9 }); //shoud be 9
 
 
             //Finding next perfect square
