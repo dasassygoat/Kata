@@ -36,6 +36,12 @@ namespace kata
 
         public int Gcd(List<int> num)
         {
+            //a = bq + r where 0 ≤ r < b;
+
+            //if
+            //  b > a
+            //then
+            //  b = a * 
             return 6;
         }
     }
