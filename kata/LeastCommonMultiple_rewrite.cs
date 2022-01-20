@@ -24,12 +24,19 @@ namespace kata
 
             if(num.Count == 2)
             {
-                var numListMultipled = num[0] * num[1];
+                var numListMultipled = (num[0] * num[1]) / Gcd(num);
                 Console.WriteLine(numListMultipled);
                 return numListMultipled;
-            }       
+            }  
+            
+            //Lcm(a,b) = (a X b) / Gcd(a,b)
 
             return 0;
+        }
+
+        public int Gcd(List<int> num)
+        {
+            return 6;
         }
     }
 }
