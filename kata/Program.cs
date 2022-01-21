@@ -6,11 +6,17 @@ namespace kata
     {
         static int Main(string[] dice)
         {
+            //BoolToString
+            BoolToString bts = new BoolToString();
+            bts.boolean_to_string(true);
+            bts.boolean_to_string(false);
+           
+
             //LCM
             LeastCommonMultiple_rewrite lcm = new LeastCommonMultiple_rewrite();
-            lcm.Lcm(new List<int> { 2, 5 }); //expected to be 10
-            lcm.Lcm(new List<int> { 2, 3, 4 }); //expected to be 12
-            lcm.Lcm(new List<int> { 9 }); //shoud be 9
+            //lcm.Lcm(new List<int> { 2, 5 }); //expected to be 10
+            //lcm.Lcm(new List<int> { 2, 3, 4 }); //expected to be 12
+            //lcm.Lcm(new List<int> { 9 }); //shoud be 9
 
             //LCM Original version
             //LeastCommonMultiple lcm = new LeastCommonMultiple();
