@@ -24,7 +24,7 @@ fn count_sheep(sheep: &[bool]) -> u8 {
 }
 
 fn summation(n: i32) -> i32 {
-    // Kata voted best practice was
+    // Kata voted best practice was, I think its hard to quickly know what it does
     // (1..=n).sum()
     let mut sum =0;
     let mut count = 1;
