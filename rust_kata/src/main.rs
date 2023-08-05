@@ -11,6 +11,15 @@ fn main(){
 
     let sum = summation(2);
     eprintln!("{sum}");
+
+    let returned_string = remove_char("eloquent");
+    println!("{returned_string}");
+}
+
+pub fn remove_char(s: &str) -> String {
+
+    // Your code here!
+    String::from("Code on, rustacean!")
 }
 
 fn count_sheep(sheep: &[bool]) -> u8 {
@@ -34,4 +43,5 @@ fn summation(n: i32) -> i32 {
     }
     return sum;
 }
+
 
