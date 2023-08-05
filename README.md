@@ -8,3 +8,4 @@
 ## Rust Kata
 - Counting Sheep _https://www.codewars.com/kata/54edbc7200b811e956000556_
 - Grasshopper - Summation _https://www.codewars.com/kata/55d24f55d7dd296eb9000030/rust_
+- First And Last Character _https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/rust_
